@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Loja de Tenis">
+    <meta name="author" content="LRodrigo - Papagaio">
+
+    <!-- Titulo do Site -->
+    <title>SENAC SHOES</title>
+
+    <!-- Favicons --> 
+    <!-- https://realfavicongenerator.net/?spm=a2ty_o01.29997173.0.0.1857c921qtoRb2 --> 
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" 
+        href="https://fonts.googleapis.com">
+	<link rel="preconnect" 
+        href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" >
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 12px;
+        }
+
+        footer{
+            margin-top: 8;
+            padding: 8px;
+            background-color: rgb(248, 238, 200);
+        }
+    </style>
+
+
+    <link href="css/estilo.css" rel="stylesheet">
+   
+        
+    
+    </head>
+    <body>
+        <p>SENAC.RJ</p>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+    
+                    </div>
+                    
+    
+        <!-- Cabeçalho -->
+        <header class="container">
+            <h1 class="text-dark">
+                <i class="bi bi-bar-chart-fill"></i></i>
+                curso senac.rj
+            </h1>   
+                 
+        </header>
+    
+        <!-- Conteúdo principal -->
+        <main class="container">
+        <form action="/cadastro" method="POST" enctype="multipart/form-data">
+         
+            <!-- dados pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+               <div class="form-group">
+                    <label for="email">Confirme seu E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <h8>no minimo 15 cractérias</h8>
+                <div class="form-group">
+                    <label for="senha">senha:</label>
+                  
+                    <input type="senha" id="senha" name="senha" required>
+                </div>
+                
+    
+                <div class="form-group">
+                    <label for="senha">Confirme sua senha:</label>
+                  
+                    <input type="senha" id="senha" name="senha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Gênero:</label>
+                    <div>
+                        <input type="radio" id="masculino" name="genero" value="M" checked>
+                        <label for="masculino">Masculino</label>
+                        
+                        <input type="radio" id="feminino" name="genero" value="F">
+                        <label for="feminino">Feminino</label>
+                        
+                        <input type="radio" id="outro" name="genero" value="O">
+                        <label for="outro">Outro</label>
+    
+                        <input type="radio" id="prefiro não informar" name="genero" value="O">
+                        <label for="prefiro não informar">prefiro não informar</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data_nascimento" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cor-favorita"><h6>Cor Favorita:</label></h6>
+                    <input type="color" id="cor-favorita" name="cor_favorita" value="#FFF8DC">
+                </div>
+            </fieldset>
+    
+           
+            <!-- endereço -->
+            <fieldset>
+                <legend>Endereço</legend>
+                
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecione...</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+            </fieldset>
+       
+            <div class="form-group">
+                <label for="estado"> pais :</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione...</option>
+                    <option value="SP">brasil</option>
+                    <option value="RJ">russia</option>
+                    <option value="MG">estados unidos</option>
+                    <option value="SP">alemanha</option>
+                    <option value="SP">portugal</option>
+                    <option value="SP">espanha</option>
+                    <option value="SP">frança</option>
+                    <option value="SP">inglaterra</option>
+                </select>
+            </div>
+            
+            <!-- preferencias -->
+            <fieldset>
+                <legend>Preferências</legend>
+                
+                <div class="form-group">
+                    <label>Interesses:</label>
+                    <div>
+                        <input type="checkbox" id="esportes" name="interesses[]" value="esportes">
+                        <label for="esportes">Esportes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="musica" name="interesses[]" value="musica">
+                        <label for="musica">Música</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="viagens" name="interesses[]" value="viagens">
+                        <label for="viagens">Viagens</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="viagens" name="interesses[]" value="viagens">
+                        <label for="viagens">cilinaria</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="newsletter">Deseja receber newsletter?</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="1" checked>
+                </div>
+            </fieldset>
+            
+            <!-- documentos -->
+            <fieldset>
+                <legend>Documentos</legend>
+                
+                <div class="form-group">
+                    <label for="foto">Foto do Perfil:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="curriculo">Currículo (PDF):</label>
+                    <input type="file" id="curriculo" name="curriculo" accept=".pdf">
+                </div>
+            </fieldset>
+            
+            <!-- observações -->
+            <div class="form-group">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" 
+                            placeholder="Alguma observação importante..."></textarea>
+            </div>
+            
+            <!-- Botão -->
+            <button type="submit">Cadastrar</button>
+        
+    
+        </form>
+        </main>
+    
+        <!-- Rodapé -->
+        <footer id="footer" class="container text-center">
+            <p class="text-muted pb-3">
+                <i class="far fa-copyright icon"></i> 2025 - Todos os direitos reservados.
+            </p>
+        </footer>
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-2  mb-3">
+                    <p>Links Rápidos</p>
+                    <nav class="nav flex-column">
+                        <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+                        <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+                        <a class="nav-link text-white py-1" href="ajuda.html">Ajuda</a>
+                        <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+                        <a class="nav-link text-white py-1" href="blog.html">Blog</a>                        
+                    </nav>
+                </div>
+
+                <!-- Coluna - Contatos -->
+                <div class="col-md-2">
+                    <p>Contatos</p>
+                    <p><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</p>
+                    <p><i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:contato@tenis.github.io" class="text-white">
+                            contato@tenis.github.io
+                        </a>
+                    </p>
+                    <p>
+                        <a href="suporte.html" class="text-white">
+                            Acesse o suporte
+                        </a> 
+                    </p>
+                </div>
+                
+                <!-- Outras colunas do rodapé (opcional) -->
+                <div class="col-md-8">
+                    <p class="text-end mb-0"></p>
+                </div>
+
+            </div>
+            <!-- Div Linha -->
+
+            <hr/>
+
+            <div class="row">
+                <!-- Coluna - Idioma -->
+                <div class="col-md-2  mb-3">
+
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select idioma">
+                        <option value="Portuges" selected>Portugues</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Russian</option>
+                    </select>
+                
+                </div>
+                <!-- Coluna - Idioma -->
+
+
+                <!-- Coluna - Moeda -->
+                <div class="col-md-1  mb-3">                
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select moeda">
+                        <option value="Real" selected>Real</option>
+                        <option value="US Dollars">US Dollars</option>
+                        <option value="Euro">Euro</option>
+                    </select>    
+                </div>
+                 <!-- Coluna - Moeda -->
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-9  mb-3">
+                    <p class="text-end text-black-50 mb-0">
+                        <a href="termos.html" class="text-white">Termos e condições</a> |
+                        <a href="privacidade.html" class="text-white">Privacidade</a> |
+                        <span class="text-white">© 2025 SENAC - RJ</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Div Container -->
+    </footer>
+    <!-- Footer -->
+    
+	
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
