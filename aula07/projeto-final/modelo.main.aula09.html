@@ -103,47 +103,130 @@
     </header>
 
     <!-- Main -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+    <main class="container">
+    <form action="" method="post">
 
-                    <p>SENAC.RJ</p>
+    <!--1º linha-->
+    <div class="row mb-4">
 
-                </div>
-
-                <div class="col-md-10">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-
-                
-
-                        <input  type="button" value="Salvar" class="btn btn-primary">
-                        <button type="submit" value="Enviar"  class="btn btn-success">Enviar</button>
-                        <button type="reset"  value="Limpar"  class="btn btn-info">Limpar</button>
-
-                    </form>
-                </div>
-
-            </div>
+        <!--SELECT - ESTADO-->
+        <div class="col-12">
+            <label for="estados" class="form-label">Selecione um estado :</label>
+            <select id="estados" class="form-select" aria-label="selecione um estado">
+                <options selected disabled> Escolha um estado</options>
+                <option value="AC">Acre</options>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="RJ">Rio de janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="BR">Brasília</option>
+            </select>
         </div>
+    </div>
+
+    <!--2º linha-->
+    <div class="row mb- 4">
+        <label class="form-labem"> Selecione seu Gênero</label>
+
+        <div class="form-check">
+            <input class="form-check-input"
+              type="radio" name="gênero" id="masculino"
+              value="masculino" checked>
+              <label class="form-check-label" for="masculino">
+                masculino
+              </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input"
+                type="radio" name="gênero" id="feminino"
+                value="feminino" checked>
+                <label class="form-check-label" for="feminino">
+                feminino
+                </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input"
+                type="radio" name="gênero" id="não binário"
+                value="não binário" checked>
+                <label class="form-check-label" for="não binário">
+                não binário
+                </label>
+
+         <div class="form-check">
+
+            <input class="form-check-input"
+                type="radio" name="gênero" id="não informar"
+                value="não informar" checked>
+                <label class="form-check-label" for="não informar">
+                não informar
+                </label>
+        </div>
+        </div>
+
+
+    </div>
+
+    <div class="row mb-4">
+        <!--checkbof > interesses-->
+        <div class="col-12">
+            <label class="form-labem"> Selecione seus interesses:</label>
+
+            <div class="form-check">
+                <input class="form-check-input"
+              type="checkbox" value="esportes" id="esportes">
+             
+              <label class="form-check-label" for="esportes">
+                esportes
+              </label>
+
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input"
+          type="checkbox" value="moda" id="moda">
+         
+          <label class="form-check-label" for="moda">
+            moda
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input"
+          type="checkbox" value="tecnologia" id="tecnologia">
+         
+          <label class="form-check-label" for="tecnologia">
+            tecnologia
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input"
+          type="checkbox" value="moveis" id="moveis">
+         
+          <label class="form-check-label" for="moveis">
+            moveis
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input"
+          type="checkbox" value="viagems" id="viagems">
+         
+          <label class="form-check-label" for="viagems">
+            viagems
+          </label>
+        </div>
+    
+    </div>
+
+
+
+
+
+        
     </main>
     <!-- Main -->
-    
 
     <!-- Footer -->
     <footer class="bg-dark text-white mt-auto">
@@ -151,8 +234,6 @@
         <div class="container py-4">
             <!-- Div Linha -->
             <div class="row">
-                
-                
 
                 <!-- Coluna - Links Rápidos -->
                 <div class="col-md-2  mb-3">
